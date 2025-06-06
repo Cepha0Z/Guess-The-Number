@@ -9,7 +9,6 @@
 let secert = Math.trunc(Math.random() * 20) + 1;
 let Score = 20;
 let HScore = 0;
-console.log(document.querySelector('.score').textContent);
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
@@ -45,6 +44,7 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').style.width = '15rem';
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.number').textContent = '?';
+  document.querySelector('.number').textContent = '';
 
   document.querySelector('.guess').value = '';
 
