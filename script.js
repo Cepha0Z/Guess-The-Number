@@ -49,6 +49,5 @@ document.querySelector('.again').addEventListener('click', function () {
 
   secert = Math.trunc(Math.random() * 20) + 1;
   Score = 20;
-  document.querySelector('.number').textContent = secert;
   document.querySelector('.score').textContent = Score;
 });
